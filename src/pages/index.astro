@@ -1,0 +1,63 @@
+---
+import '../styles/global.css'
+
+const services = [
+  ['01', 'Hair artistry', 'Cuts, styling, blow-dry and occasion-ready looks.'],
+  ['02', 'Skin rituals', 'Facials and skin-care sessions for a fresh, rested glow.'],
+  ['03', 'Nails & finishing', 'Neat, polished nail care and finishing touches.'],
+  ['04', 'Bridal & occasion', 'Makeup and beauty preparation for your important days.'],
+]
+
+const hours = [
+  ['Public listing', 'Open until 7:00 PM'],
+  ['Weekly schedule', 'Confirm before visiting'],
+]
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Lavnya Beauty Parlour in Ahmedpur, Latur. Hair, skin, nails and occasion beauty care in a welcoming local studio." />
+    <meta property="og:title" content="Lavnya Beauty Parlour | Ahmedpur" />
+    <meta property="og:description" content="Beauty care for everyday glow and your big moments in Ahmedpur." />
+    <title>Lavnya Beauty Parlour | Ahmedpur, Latur</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Lavnya Beauty Parlour home"><span class="logo-flower">L</span><span>Lavnya<br /><small>BEAUTY PARLOUR</small></span></a>
+      <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
+      <a class="header-cta" href="tel:+918237093377">Call to book <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-art" aria-hidden="true"><div class="art-circle circle-one"></div><div class="art-circle circle-two"></div><div class="art-flower">✳</div><div class="art-word">GLOW</div></div>
+        <div class="hero-copy"><p class="eyebrow">AHMEDPUR / LATUR / MH</p><h1>Beauty that<br /><em>feels like you.</em></h1><p class="hero-lede">A warm, thoughtful beauty space for hair, skin, nails and the moments you want to remember.</p><div class="hero-actions"><a class="button button-dark" href="tel:+918237093377">Book an appointment <span>↗</span></a><a class="text-link" href="#services">Explore services <span>↓</span></a></div></div>
+        <div class="hero-note"><span>01</span><span>LOCAL BEAUTY<br />STUDIO</span></div>
+      </section>
+
+      <section class="trust-strip"><span>5.0 <b>★★★★★</b> public listing rating</span><span>Patil Galli, Ahmedpur</span><span>Open until 7:00 PM</span></section>
+
+      <section class="about section" id="about"><div class="section-label"><span>01</span><span>OUR APPROACH</span></div><div class="about-heading"><p class="eyebrow">A LITTLE TIME FOR YOU</p><h2>Come as you are.<br /><em>Leave glowing.</em></h2></div><div class="about-copy"><p>Lavnya Beauty Parlour is a local beauty destination in Ahmedpur for considered care, polished finishing and a little space to slow down.</p><p class="small-note">Details on individual services and prices are ready to be confirmed with the parlour team.</p></div></section>
+
+      <section class="services section" id="services"><div class="services-top"><div><p class="eyebrow">THE MENU</p><h2>Make time<br /><em>for your glow.</em></h2></div><span class="section-label">02 / SERVICES</span></div><div class="service-list">{services.map(([number, title, copy]) => <article class="service-row"><span class="service-number">{number}</span><h3>{title}</h3><p>{copy}</p><span class="service-arrow">↗</span></article>)}</div></section>
+
+      <section class="booking section"><div class="booking-card"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Let's plan<br /><em>your visit.</em></h2><p>Call the studio to check availability, ask about services, and choose a time that works for you.</p></div><a class="button button-lime" href="tel:+918237093377">Call 082370 93377 <span>↗</span></a></div></section>
+
+      <section class="visit section" id="visit"><div class="section-label"><span>03</span><span>FIND US</span></div><div class="visit-grid"><div><p class="eyebrow">YOUR LOCAL BEAUTY STOP</p><h2>Right here in<br /><em>Ahmedpur.</em></h2><address>Patil Galli,<br />Masjid-E-Markas Dastgir Colony,<br />Ahmedpur, Maharashtra 413515</address><div class="visit-actions"><a class="button button-dark" href="https://www.google.com/maps/search/?api=1&query=Lavnya+Beauty+Parlour+Patil+Galli+Ahmedpur+Maharashtra" target="_blank" rel="noreferrer">Get directions <span>↗</span></a><a class="social-link" href="https://www.instagram.com/lavanyabeautyclinic/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a></div></div><div class="hours"><div class="hours-head"><span>OPENING HOURS</span><span>LOCAL TIME</span></div>{hours.map(([day, time]) => <div class="hours-row"><span>{day}</span><span>{time}</span></div>)}</div></div></section>
+
+      <section class="instagram-section"><div class="instagram-copy"><p class="eyebrow">FOLLOW THE WORK</p><h2>Beauty, in<br /><em>real life.</em></h2><p>Recent public looks from Lavnya Beauty Parlour, linked back to the original Instagram posts.</p><a class="button button-dark" href="https://www.instagram.com/lavanyabeautyclinic/" target="_blank" rel="noreferrer">@lavanyabeautyclinic <span>↗</span></a></div><div class="instagram-grid"><a class="insta-tile tile-one" href="https://www.instagram.com/lavanyabeautyclinic/p/DZSimSbtwld/" target="_blank" rel="noreferrer"><img src="https://scontent.cdninstagram.com/v/t51.82787-15/718942876_18084256502553402_9063838522814658115_n.webp?stp=dst-jpg_e35_s640x640_tt6&amp;_nc_cat=110&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=dMxyRdDbb_AQ7kNvwFU23nI&amp;_nc_oc=AdrRTyBsdMCgIEiWYaDM_qNqMImyG-5LQqSYSJVJfRSXSHWK2ydvR99L8J4ovZWZj_W1SqSWkXl84DhMvBtPu06T&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=wp8jWZCtfwNwWcqnmA8L9A&amp;_nc_ss=79689&amp;oh=00_AQG2AUyV-mfmr_SNrbwqaVKbv1eIldzoh8IcLJj140Qjkg&amp;oe=6A933C3C" alt="Lavanya makeup look with eyeliner and jewelry" loading="lazy" /><span>Makeup &amp; jewelry</span><b>↗</b></a><a class="insta-tile tile-two" href="https://www.instagram.com/lavanyabeautyclinic/reel/DZShGG9tHXv/" target="_blank" rel="noreferrer"><img src="https://scontent.cdninstagram.com/v/t51.71878-15/718139062_2160392281522191_7144615567246876266_n.jpg?stp=dst-jpg_e35_s640x640_tt6&amp;_nc_cat=107&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=xGEx9PcgkQ8Q7kNvwGnjfKv&amp;_nc_oc=AdpWWhCFjElhuUWft3DC1XH1xsoJBveqeHsafpUWIYiLLp8P4a2LH9K8kLy3w3h-vzxpegXajL5b5cJVfiDLeVvP&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=wp8jWZCtfwNwWcqnmA8L9A&amp;_nc_ss=79689&amp;oh=00_AQGVek9puHIZkAnqWcB00TuzfqKvDmF0KoUX2QPOsB2xeg&amp;oe=6A933FD0" alt="Lavanya beauty reel with a smiling client" loading="lazy" /><span>Client smiles</span><b>↗</b></a><a class="insta-tile tile-three" href="https://www.instagram.com/lavanyabeautyclinic/reel/DZSgtCpNOma/" target="_blank" rel="noreferrer"><img src="https://scontent.cdninstagram.com/v/t51.82787-15/719691392_18084254552553402_7238223373307883970_n.jpg?stp=dst-jpg_e35_s640x640_tt6&amp;_nc_cat=101&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=IosyB_Gm460Q7kNvwG79K9k&amp;_nc_oc=AdrN_Y0THrWXlcadbfg7fcctMDmCwuFYkLOcHSlPx50Yjbe38z2JO-wVrvk7qcsfWQaNrIgXFJOREcuTTiWeii7S&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=wp8jWZCtfwNwWcqnmA8L9A&amp;_nc_ss=79689&amp;oh=00_AQElVD4aoZiJd_J_zcWksuK-XnrqK2svkBV9t10YzkXbZQ&amp;oe=6A934517" alt="Lavanya henna and makeup reel" loading="lazy" /><span>Henna &amp; occasion</span><b>↗</b></a></div></section>
+
+      <section class="confirm-banner"><span class="confirm-icon">✦</span><div><p class="eyebrow">FOR THE OWNER</p><h2>Make this page<br /><em>yours.</em></h2></div><p>We can add your real service menu, prices, photos, Instagram, booking link and confirmed opening hours before launch.</p><a class="text-link" href="tel:+918237093377">Confirm details <span>↗</span></a></section>
+    </main>
+
+    <footer><div class="logo"><span class="logo-flower">L</span><span>Lavnya<br /><small>BEAUTY PARLOUR</small></span></div><span>AN UNOFFICIAL LOCAL BUSINESS CONCEPT / 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <script>
+      const localInstagramImages = ['/instagram/makeup-look.webp', '/instagram/client-smile.jpg', '/instagram/henna-occasion.jpg']
+      document.querySelectorAll('.instagram-grid img').forEach((image, index) => {
+        if (localInstagramImages[index]) image.src = localInstagramImages[index]
+      })
+    </script>
+  </body>
+</html>
